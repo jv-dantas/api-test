@@ -14,5 +14,7 @@ public class SpringDocConfig {
                         .title("API de Produtos")
                         .version("1.0")
                         .description("Documentação da API REST para gerenciamento de produtos."));
+        // Para testar o layout da documentação springDoc no navegador
+        // http://localhost:8080/swagger-ui/index.html#/
     }
 }
