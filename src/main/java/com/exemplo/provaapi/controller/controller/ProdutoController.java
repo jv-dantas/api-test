@@ -1,7 +1,7 @@
-package com.exemplo.provaapi.controller;
+package com.exemplo.provaapi.controller.controller;
 
-import com.exemplo.provaapi.model.Produto;
-import com.exemplo.provaapi.service.ProdutoService;
+import com.exemplo.provaapi.controller.model.Produto;
+import com.exemplo.provaapi.controller.service.ProdutoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;

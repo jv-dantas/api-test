@@ -1,7 +1,7 @@
-package com.exemplo.provaapi.service;
+package com.exemplo.provaapi.controller.service;
 
-import com.exemplo.provaapi.model.Produto;
-import com.exemplo.provaapi.repository.ProdutoRepository;
+import com.exemplo.provaapi.controller.model.Produto;
+import com.exemplo.provaapi.controller.repository.ProdutoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

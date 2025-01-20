@@ -1,4 +1,4 @@
-package com.exemplo.provaapi.model;
+package com.exemplo.provaapi.controller.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

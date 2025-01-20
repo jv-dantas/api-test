@@ -1,4 +1,4 @@
-package com.exemplo.provaapi;
+package com.exemplo.provaapi.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

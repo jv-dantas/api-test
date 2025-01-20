@@ -1,4 +1,4 @@
-package com.exemplo.provaapi;
+package com.exemplo.provaapi.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
