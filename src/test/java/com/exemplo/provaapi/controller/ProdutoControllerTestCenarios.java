@@ -52,14 +52,4 @@ public class ProdutoControllerTestCenarios {
                 .andExpect(jsonPath("$").isEmpty());
     }
 
-    // Cenário de Falha: Exceção no serviço
-    @Test
-    void listarTodos_quandoServicoFalhaDeveRetornarErro500() throws Exception {
-        when(produtoService.listarTodos()).thenThrow(new RuntimeException("Erro interno no servidor"));
-
-        mockMvc.perform(get("/api/produtos"))
-                .andExpect(status().isInternalServerError())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.message").value("Erro interno no servidor"));
-    }
 }

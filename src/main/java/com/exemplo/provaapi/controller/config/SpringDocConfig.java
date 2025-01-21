@@ -11,7 +11,7 @@ public class SpringDocConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API de Produtos")
+                        .title("API REST de Produtos")
                         .version("1.0")
                         .description("Documentação da API REST para gerenciamento de produtos."));
         // Para testar o layout da documentação springDoc no navegador
