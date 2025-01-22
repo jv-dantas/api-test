@@ -60,6 +60,23 @@ src/
 
 []()
 
+## Anotações
+
+> As anotações são usadas para habilitar e configurar recursos específicos do Spring, permitindo que você defina o comportamento do seu aplicativo de maneira declarativa. O framework Spring detecta essas anotações durante o tempo de execução e toma as ações apropriadas com base nas configurações fornecidas.
+> 
+1. **`@RestController`**: Usada para marcar uma classe como um controller no padrão MVC (Model-View-Controller) do Spring.
+2. **`@RequestMapping`**: Especifica a URL que um método do controlador irá manipular. 
+3. **`@Autowired`**: Utilizada para injetar dependências automaticamente em uma classe, permitindo que você obtenha uma instância de uma classe necessária sem criar manualmente.
+4. **`@Component`**: Usada para marcar uma classe como um componente gerenciado pelo Spring.
+5. **`@Service`**: Marca uma classe como um serviço do Spring, geralmente contendo a lógica de negócios do aplicativo.
+6. **`@RestControllerAdvice`**:  É usado para definir um componente global que trata exceções lançadas por controladores REST.
+
+### Parâmetros dos métodos do controller
+
+1. **`@PathVariable`**: Usada para injetar uma variável fornecida no path de uma requisição nos parâmetros do método do controller que foi chamado para tratar essa requisição
+    1. Exemplo: `/user/12` ⇒ `@PathVariable String id`
+2. **`@RequestBody`**: Usada para injetar o body de uma requisição nos parâmetros do método do controller que foi chamado para tratar essa requisição
+
 ### Explicação dos Pacotes
 
 1. **controller**: Contém as classes responsáveis por receber as requisições HTTP e enviar as respostas.
