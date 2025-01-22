@@ -1,15 +1,18 @@
 package com.exemplo.provaapi.controller.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@SequenceGenerator(
+        name = "produto_seq",
+        sequenceName = "produto_seq",
+        allocationSize = 1
+)
 public class Produto {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "produto_seq")
     private Long id;
+
     private String nome;
     private Double preco;
 
