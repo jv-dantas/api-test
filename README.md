@@ -1143,3 +1143,226 @@ END;
 ---
 
 Esses scripts cobrem todas as operações principais (`INSERT`, `SELECT`, `UPDATE`, `DELETE`) e utilizam PL/SQL para consultas avançadas e tratamento de dados com relacionamento entre tabelas.
+
+---------------------------------------------------------------------------
+
+
+# Comandos Git
+
+Meu acesso Git : https://github.com/jv-dantas/
+
+
+### **1. Inicializar o Repositório Local**
+
+Se você ainda não tem um repositório Git configurado localmente, inicialize-o:
+
+```bash
+
+git init
+
+```
+
+---
+
+### **2. Configurar Informações do Usuário**
+
+Se é a primeira vez que você usa o Git neste ambiente, configure suas credenciais:
+
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@example.com"
+
+```
+
+---
+
+### **3. Conectar-se ao Repositório Remoto**
+
+Se o repositório remoto já existe no GitHub, GitLab ou outro serviço, conecte-o ao seu projeto local:
+
+```bash
+
+git remote add origin https://github.com/seu-usuario/seu-repositorio.git
+
+por exemplo: **git remote add origin https://github.com/jv-dantas/api-test.git**
+
+```
+
+Para verificar se o repositório foi conectado corretamente:
+
+```bash
+
+git remote -v
+
+```
+
+---
+
+### **4. Criar e Alternar para uma Nova Branch**
+
+Crie uma nova branch para trabalhar em uma funcionalidade específica:
+
+único comando:
+
+```bash
+
+git checkout -b minha-nova-branch
+
+```
+
+---
+
+### **5. Adicionar e Confirmar Alterações**
+
+Adicione os arquivos modificados ao índice (staging area):
+
+```bash
+
+git add .
+
+```
+
+Confirme as alterações com uma mensagem de commit descritiva:
+
+```bash
+
+git commit -m "Descrição das alterações realizadas"
+
+```
+
+---
+
+### **6. Enviar Alterações para o Repositório Remoto**
+
+Envie as alterações para a nova branch no repositório remoto:
+
+```bash
+
+git push -u origin minha-nova-branch
+
+```
+
+Após o primeiro `push` com `-u`, para os próximos commits, basta usar:
+
+```bash
+
+git push
+
+```
+
+---
+
+### **7. Atualizar o Repositório Local com Mudanças do Remoto**
+
+Se você quiser garantir que seu repositório local está atualizado com o remoto:
+
+```bash
+
+git pull origin main
+
+```
+
+Substitua `main` pelo nome da branch que deseja atualizar (se for diferente).
+
+---
+
+### **8. Fazer Merge da Nova Branch (Opcional)**
+
+Se você terminar a funcionalidade e quiser integrar as alterações ao branch principal (`main`):
+
+1. Volte para a branch principal:
+    
+    ```bash
+    
+    git checkout main
+    
+    ```
+    
+2. Atualize o branch principal:
+    
+    ```bash
+    
+    git pull origin main
+    
+    ```
+    
+3. Faça o merge da nova branch no branch principal:
+    
+    ```bash
+    
+    git merge minha-nova-branch
+    
+    ```
+    
+4. Envie as alterações atualizadas para o repositório remoto:
+    
+    ```bash
+    
+    git push origin main
+    
+    ```
+    
+
+---
+
+### **9. Excluir a Branch Local e Remota (Opcional)**
+
+Depois de fazer o merge, você pode excluir a branch local e remota (caso não precise mais dela):
+
+**Localmente:**
+
+```bash
+
+git branch -d minha-nova-branch
+
+```
+
+**No repositório remoto:**
+
+```bash
+
+git push origin --delete minha-nova-branch
+
+```
+
+---
+
+### **Comandos Importantes para Consultar o Status do Repositório**
+
+- Ver o status atual dos arquivos e branches:
+    
+    ```bash
+    
+    git status
+    
+    ```
+    
+- Listar todas as branches (local e remoto):
+    
+    ```bash
+    
+    git branch -a
+    
+    ```
+    
+- Ver o histórico de commits:
+    
+    ```bash
+    
+    git log
+    
+    ```
+    
+
+---
+
+### **Fluxo Resumido de Trabalho no Git**
+
+1. Inicializar ou clonar o repositório remoto.
+2. Criar uma nova branch para trabalhar em uma funcionalidade.
+3. Fazer alterações no código.
+4. Adicionar, commitar e enviar alterações para o repositório remoto.
+5. Atualizar o branch principal com as alterações após revisão (merge).
+6. Excluir branches obsoletas.
+
+Isso cobre os principais passos para configurar e trabalhar em um projeto Git.
